@@ -1,0 +1,40 @@
+<div class="timeline-container" data-aos="fade-right" data-aos-delay="100">
+    <h3 class="section-heading">Experience</h3>
+    <ngx-timeline [events]="(timelineEvents$ | async) ?? []"
+        [enableAnimation]="false" [eventCustomTemplate]="eventCustomTemplate" [dateInstantCustomTemplate]="empty">
+    </ngx-timeline>
+</div>
+
+<ng-template #eventCustomTemplate let-event="event" let-colSidePosition="colSidePosition">
+
+    <div class="event-card" [ngClass]="colSidePosition"
+        [attr.data-aos]="event.eventInfo.itemPosition === 'ON_RIGHT' ? 'fade-left' : 'fade-right'" data-aos-delay="100">
+
+        <div class="icon-wrapper" *ngIf="event.eventInfo.icon">
+            <img [src]="event.eventInfo.icon" alt="Icon for {{ event.eventInfo.title }}" />
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h3 class="title">{{ event.eventInfo.title }}</h3>
+
+                <h3 class="role-tag">
+                    {{ event.eventInfo.role }}
+                </h3>
+
+                <span class="date">
+                    {{ event.eventInfo.timestamp | date : 'dd MMM yyyy' }}
+                </span>
+            </div>
+
+            <p class="description">
+                {{ event.eventInfo.description }}
+            </p>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #empty>
+
+</ng-template>

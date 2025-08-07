@@ -1,0 +1,25 @@
+<section id="intro" class="intro-section d-flex flex-column align-items-center justify-content-center">
+
+  <div class="intro-header">
+    <h1 class="intro-title" id="username">{{ username }}</h1>
+    <a href="https://github.com/willmayhew" target="_blank" rel="noopener" class="intro-link" id="github-button">
+      <i class="bi bi-github"></i>
+    </a>
+  </div>
+
+  <div class="about-me-section">
+    <span>{{aboutMe}}</span>
+  </div>
+
+  <div class="home-buttons">
+    <a class="btn btn-outline-light" href="#experience">Experience</a>
+    <a class="btn btn-outline-light" href="#skills">Skills</a>
+    <a class="btn btn-outline-light" href="#projects">Projects</a>
+  </div>
+
+  <app-reactive-arrow></app-reactive-arrow>
+</section>
+
+<app-experience id="experience"></app-experience>
+<app-user-stats id="skills"></app-user-stats>
+<app-github-stats id="projects"></app-github-stats>

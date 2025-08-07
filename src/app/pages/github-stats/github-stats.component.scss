@@ -1,0 +1,66 @@
+.stats-container {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: var(--text-color);
+
+    .project-showcase {
+        padding: 2rem 1rem;
+
+        .section-heading {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-list {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 1.5rem;
+
+            .project-item {
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                padding: 1rem;
+                position: relative;
+                transition: box-shadow ease-in 0.2s;
+
+                .project-title {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                .project-link {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: var(--text-color);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .project-language {
+                    display: inline-block;
+                    margin-left: 0.5rem;
+                    font-size: 0.9rem;
+                    opacity: 0.8;
+                }
+
+                .project-description {
+                    margin-top: 0.5rem;
+                    font-size: 0.95rem;
+                    line-height: 1.4;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 20px 15px #006969,
+                }
+            }
+        }
+    }
+}

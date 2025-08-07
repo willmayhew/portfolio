@@ -1,0 +1,22 @@
+<!-- Skills & Technologies -->
+<section id="technologies" class="technologies-container section-block" data-aos="fade-up" data-aos-delay="150"
+    aria-labelledby="technologies-title">
+    <h2 id="technologies-title" class="section-heading">
+        Skills & Technologies
+    </h2>
+
+    <div class="skill-groups">
+        <article *ngFor="let group of ((skillGroups$ | async) ?? []); let gi = index" class="skill-showcase" data-aos="fade-up"
+            [attr.data-aos-delay]="group.delay" [attr.aria-labelledby]="group.id + '-title'">
+            <h3 [id]="group.id + '-title'" class="group-title">
+                {{ group.title }}
+            </h3>
+
+            <ul class="tech-list" [attr.aria-label]="group.title">
+                <li *ngFor="let tech of group.items; let i = index" class="tech-item" tabindex="0">
+                    {{ tech }}
+                </li>
+            </ul>
+        </article>
+    </div>
+</section>
