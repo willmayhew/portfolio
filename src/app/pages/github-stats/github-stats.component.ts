@@ -1,11 +1,11 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { Chart, ChartOptions, ChartType } from 'chart.js/auto';
-import { GithubRepo } from 'src/app/interfaces/github-repo';
-import { GithubUser } from 'src/app/interfaces/github-user';
-import { GithubService } from 'src/app/services/github.service';
+import { GithubRepo } from '../../interfaces/github-repo';
+import { GithubUser } from '../../interfaces/github-user';
+import { GithubService } from '../../services/github.service';
 import * as Aos from 'aos';
-import { PersonalRepositoryService } from 'src/app/services/personal-repository.service';
+import { PersonalRepositoryService } from '../../services/personal-repository.service';
 
 @Component({
     selector: 'app-github-stats',

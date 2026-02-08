@@ -1,32 +1,47 @@
 .technologies-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
-    color: var(--text-color);
+    padding: 3rem 1rem;
+    background: var(--bg-white);
+    min-height: calc(100vh - 70px);
+    color: var(--text-dark);
   
     .section-heading {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--text-dark);
+      font-weight: 700;
     }
   
     .skill-groups {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
   
     .skill-showcase {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      padding: 1.5rem;
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
       display: flex;
       flex-direction: column;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+        border-color: var(--primary-color);
+      }
   
       .group-title {
         text-align: center;
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-dark);
+        font-weight: 600;
       }
   
       .tech-list {
@@ -39,18 +54,21 @@
         justify-content: center;
   
         .tech-item {
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid var(--text-color);
-          border-radius: 4px;
-          padding: 0.5rem 0.75rem;
+          background: var(--bg-white);
+          border: 2px solid var(--primary-color);
+          border-radius: 6px;
+          padding: 0.6rem 1rem;
           font-size: 0.9rem;
+          color: var(--text-dark);
           cursor: default;
-          transition: box-shadow 0.2s ease, transform 0.2s ease;
+          transition: all 0.2s ease;
+          font-weight: 500;
   
           &:hover,
           &:focus {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px);
+            background: var(--primary-color);
+            color: var(--bg-white);
+            transform: scale(1.05);
           }
         }
       }

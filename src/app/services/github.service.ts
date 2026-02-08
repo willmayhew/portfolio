@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { GithubUser } from '../interfaces/github-user';
 import { Observable } from 'rxjs';
 import { GithubRepo } from '../interfaces/github-repo';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'

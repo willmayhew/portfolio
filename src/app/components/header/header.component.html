@@ -1,0 +1,14 @@
+<header class="sticky-header">
+  <nav class="header-nav container d-flex align-items-center justify-content-between">
+    <a routerLink="/" class="header-logo">
+      User Portfolio
+    </a>
+    
+    <ul class="nav-links list-unstyled d-flex gap-4 mb-0">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+    </ul>
+  </nav>
+</header>

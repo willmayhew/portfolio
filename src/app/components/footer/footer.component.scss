@@ -1,58 +1,38 @@
 .footer {
-    background: rgba(0, 0, 0, 0.6);
-    color: var(--text-color);
-    font-size: 0.9rem;
-  
-    .footer-logo {
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--text-color);
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  
-    .footer-copy {
-      margin: 0.25rem 0 0;
-      opacity: 0.7;
-      font-size: 0.8rem;
-    }
-  
-    .footer-nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      transition: color 0.2s;
-  
-      &:hover {
-        color: rgba(255, 255, 255, 0.75);
-      }
-    }
-  
-    .footer-social a {
-      color: var(--text-color);
-      font-size: 1.2rem;
-      transition: color 0.2s;
-  
-      &:hover {
-        color: rgba(255, 255, 255, 0.75);
-      }
-    }
-  
-    .back-to-top {
-      background: var(--text-color);
-      color: var(--bg-gradient-end);
-      border: none;
-      border-radius: 4px;
-      padding: 0.25rem 0.75rem;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: background 0.2s;
-  
-      &:hover {
-        background: rgba(255, 255, 255, 0.9);
-      }
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+
+  .footer-logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--secondary-color);
     }
   }
+
+  .footer-copy {
+    margin: 0.25rem 0 0;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+
+  .footer-social a {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--primary-color);
+      transform: translateY(-2px);
+    }
+  }
+}
   

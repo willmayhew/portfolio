@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { GithubStatsComponent } from './pages/github-stats/github-stats.component';
 import { DecimalPipe } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 import { UserStatsComponent } from './pages/user-stats/user-stats.component';
 import { ReactiveArrowComponent } from './components/reactive-arrow/reactive-arrow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +20,7 @@ import { NgxTimelineModule } from '@frxjs/ngx-timeline';
         HomeComponent,
         GithubStatsComponent,
         FooterComponent,
+        HeaderComponent,
         UserStatsComponent,
         ReactiveArrowComponent,
         ExperienceComponent,

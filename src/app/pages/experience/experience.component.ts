@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TimeLineEventExtra } from 'src/app/interfaces/time-line-event-extra';
-import { ExperienceService } from 'src/app/services/experience.service';
+import { TimeLineEventExtra } from '../../interfaces/time-line-event-extra';
+import { ExperienceService } from '../../services/experience.service';
 
 @Component({
     selector: 'app-experience',
@@ -18,8 +18,8 @@ export class ExperienceComponent implements OnInit {
 
   }
 
-  trackById(_: number, event: TimeLineEventExtra): string {
-    return event.id;
-  }
+  trackById(index: number, event: TimeLineEventExtra): string {
+    return event.id ?? index.toString();
+  } 
 
 }

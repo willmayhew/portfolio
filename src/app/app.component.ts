@@ -19,5 +19,10 @@ export class AppComponent implements OnInit {
       mirror: true,
       offset: 200
     });
+    
+    // Refresh AOS on route changes
+    window.addEventListener('scroll', () => {
+      AOS.refresh();
+    });
   }
 }
