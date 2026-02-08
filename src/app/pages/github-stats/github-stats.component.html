@@ -5,15 +5,17 @@
     <div class="project-showcase section-block" data-aos="fade-right" data-aos-delay="100">
       <h3 class="section-heading">Project Showcase</h3>
       <div class="project-list">
-        <div *ngFor="let repo of ((featuredRepos$ | async) ?? []); let i = index" class="project-item" data-aos="fade-right" [attr.data-aos-delay]="200 + i * 100">
-          <a [href]="repo.html_url" target="_blank" rel="noopener">
-            <i class="bi bi-github"></i> <span class="project-title ms-2">{{repo.name}}</span>
-          </a>
-          <span class="project-language">{{repo.language}}</span>
-          <p class="project-description">
-            {{repo.description}}
-          </p>
-        </div>
+        @for (repo of ((featuredRepos$ | async) ?? []); track repo; let i = $index) {
+          <div class="project-item" data-aos="fade-right" [attr.data-aos-delay]="200 + i * 100">
+            <a [href]="repo.html_url" target="_blank" rel="noopener">
+              <i class="bi bi-github"></i> <span class="project-title ms-2">{{repo.name}}</span>
+            </a>
+            <span class="project-language">{{repo.language}}</span>
+            <p class="project-description">
+              {{repo.description}}
+            </p>
+          </div>
+        }
       </div>
     </div>
   </div>
