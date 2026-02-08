@@ -8,9 +8,10 @@ import * as Aos from 'aos';
 import { PersonalRepositoryService } from 'src/app/services/personal-repository.service';
 
 @Component({
-  selector: 'app-github-stats',
-  templateUrl: './github-stats.component.html',
-  styleUrls: ['./github-stats.component.scss']
+    selector: 'app-github-stats',
+    templateUrl: './github-stats.component.html',
+    styleUrls: ['./github-stats.component.scss'],
+    standalone: false
 })
 export class GithubStatsComponent implements OnInit {
   user!: GithubUser;

@@ -1,9 +1,10 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-reactive-arrow',
-  templateUrl: './reactive-arrow.component.html',
-  styleUrls: ['./reactive-arrow.component.scss']
+    selector: 'app-reactive-arrow',
+    templateUrl: './reactive-arrow.component.html',
+    styleUrls: ['./reactive-arrow.component.scss'],
+    standalone: false
 })
 export class ReactiveArrowComponent implements OnInit {
 
