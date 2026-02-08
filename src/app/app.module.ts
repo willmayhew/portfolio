@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,25 +14,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { NgxTimelineModule } from '@frxjs/ngx-timeline';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    GithubStatsComponent,
-    FooterComponent,
-    UserStatsComponent,
-    ReactiveArrowComponent,
-    ExperienceComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    DecimalPipe,
-    BrowserAnimationsModule,
-    NgxTimelineModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        GithubStatsComponent,
+        FooterComponent,
+        UserStatsComponent,
+        ReactiveArrowComponent,
+        ExperienceComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        DecimalPipe,
+        BrowserAnimationsModule,
+        NgxTimelineModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
