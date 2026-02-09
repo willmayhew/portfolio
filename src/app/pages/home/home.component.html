@@ -1,15 +1,24 @@
-<section id="intro" class="intro-section d-flex flex-column align-items-center justify-content-center">
+<div class="home-container">
+  <section id="intro" class="intro-section section-block" data-aos="fade-right" data-aos-delay="100">
 
-  <div class="intro-header">
-    <h1 class="intro-title" id="username">{{ username }}</h1>
-    <a href="https://github.com/willmayhew" target="_blank" rel="noopener" class="intro-link" id="github-button">
-      <i class="bi bi-github"></i>
-    </a>
-  </div>
+    <ng-container *ngIf="profile$ | async as profile">
+      <div class="intro-header">
+        <h1 class="intro-title" id="username">{{ profile.name }}</h1>
+        <a [href]="profile.github" target="_blank" rel="noopener" class="intro-link" id="github-button">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
 
-  <div class="about-me-section">
-    <span>{{aboutMe}}</span>
-  </div>
+      <div class="about-me-section">
+        <span>{{ profile.bio }}</span>
+      </div>
 
-  <app-reactive-arrow></app-reactive-arrow>
-</section>
+      <div class="home-buttons">
+        <a class="btn" routerLink="/experience">Experience</a>
+        <a class="btn" routerLink="/skills">Skills</a>
+        <a class="btn" routerLink="/projects">Projects</a>
+      </div>
+    </ng-container>
+    
+  </section>
+</div>

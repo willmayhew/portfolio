@@ -1,37 +1,46 @@
 <div class="timeline-container" data-aos="fade-right" data-aos-delay="100">
-  <h3 class="section-heading">Experience</h3>
-  <ngx-timeline [events]="(timelineEvents$ | async) ?? []"
-    [enableAnimation]="false" [eventCustomTemplate]="eventCustomTemplate" [dateInstantCustomTemplate]="empty">
+  <h3 class="section-heading">Experience and Education</h3>
+  <ngx-timeline 
+    [events]="(timelineEvents$ | async) ?? []"
+    [enableAnimation]="false"
+    [eventCustomTemplate]="eventCustomTemplate"
+    [dateInstantCustomTemplate]="empty"
+    [reverseOrder]="true">
   </ngx-timeline>
 </div>
 
-<ng-template #eventCustomTemplate let-event="event" let-colSidePosition="colSidePosition">
+  <ng-template #eventCustomTemplate let-event="event" let-colSidePosition="colSidePosition">
 
-  <div class="event-card" [ngClass]="colSidePosition"
-    [attr.data-aos]="event.eventInfo.itemPosition === 'ON_RIGHT' ? 'fade-left' : 'fade-right'" data-aos-delay="100">
+  <div class="event-card" [ngClass]="colSidePosition" (click)="toggleExpand(event.eventInfo.id)" role="button" tabindex="0">
 
-    @if (event.eventInfo.icon) {
-      <div class="icon-wrapper">
-        <img [src]="event.eventInfo.icon" alt="Icon for {{ event.eventInfo.title }}" />
-      </div>
-    }
+    <div *ngIf="event.eventInfo.icon" class="icon-wrapper">
+      <img [src]="event.eventInfo.icon" alt="Icon for {{ event.eventInfo.title }}" />
+    </div>
 
     <div class="content">
       <div class="header">
         <h3 class="title">{{ event.eventInfo.title }}</h3>
 
-        <h3 class="role-tag">
-          {{ event.eventInfo.role }}
-        </h3>
-
         <span class="date">
-          {{ event.eventInfo.timestamp | date : 'dd MMM yyyy' }}
+          {{ event.eventInfo.dates || (event.eventInfo.timestamp | date : 'dd MMM yyyy') }}
         </span>
+
+        <h4 class="role-tag">
+          {{ event.eventInfo.role }}
+        </h4>
       </div>
 
       <p class="description">
         {{ event.eventInfo.description }}
       </p>
+
+      <ul class="highlights" [class.open]="isExpanded(event.eventInfo.id)" [attr.aria-expanded]="isExpanded(event.eventInfo.id)">
+        <li *ngFor="let highlight of event.eventInfo.highlights">
+          {{ highlight }}
+        </li>
+      </ul>
+
+      <span class="expand-indicator" [class.open]="isExpanded(event.eventInfo.id)" aria-hidden="true"></span>
     </div>
   </div>
 </ng-template>

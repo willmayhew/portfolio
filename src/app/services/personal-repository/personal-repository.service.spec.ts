@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { PersonalRepositoryService } from './personal-repository.service';
 
@@ -6,7 +7,9 @@ describe('PersonalRepositoryService', () => {
   let service: PersonalRepositoryService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule]
+    });
     service = TestBed.inject(PersonalRepositoryService);
   });
 
@@ -14,3 +17,4 @@ describe('PersonalRepositoryService', () => {
     expect(service).toBeTruthy();
   });
 });
+

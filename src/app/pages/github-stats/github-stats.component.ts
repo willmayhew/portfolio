@@ -3,9 +3,9 @@ import { forkJoin } from 'rxjs';
 import { Chart, ChartOptions, ChartType } from 'chart.js/auto';
 import { GithubRepo } from '../../interfaces/github-repo';
 import { GithubUser } from '../../interfaces/github-user';
-import { GithubService } from '../../services/github.service';
+import { GithubService } from '../../services/github/github.service';
 import * as Aos from 'aos';
-import { PersonalRepositoryService } from '../../services/personal-repository.service';
+import { PersonalRepositoryService } from '../../services/personal-repository/personal-repository.service';
 
 @Component({
     selector: 'app-github-stats',

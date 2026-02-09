@@ -1,0 +1,40 @@
+[
+  {
+    "id": "edu-1",
+    "company": "University of Southampton",
+    "title": "BSc Computer Science - First Class Honours",
+    "startedDate": "2021-09-01",
+    "dates": "2021-09-01 - 2024-06-30",
+    "description": "Completed a comprehensive Computer Science degree with First Class Honours. Strong foundation in programming, algorithms, cyber security, and machine learning."
+  },
+  {
+    "id": "exp-1",
+    "company": "Dorset Software",
+    "title": "Junior Developer",
+    "startedDate": "2024-10-01",
+    "dates": "2024-10-01 - Current",
+    "description": "Completed a 5-month intensive software development training programme as part of the graduate programme, learning industry best practices, company standards, and modern development methodologies.",
+    "highlights": [
+      "Completed comprehensive graduate training programme",
+      "Learned company development standards and best practices",
+      "Gained experience with technologies including C#, JavaScript, React, Angular, SQL, Git.",
+      "Prepared for client-facing project work and team collaboration"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "company": "Dorset Software / Innovation Group (Contracted)",
+    "title": "Junior Developer",
+    "startedDate": "2025-08-01",
+    "dates": "2025-08-01 - Current",
+    "description": "Software developer in an Agile Scrum team working on Innovation Group's Gateway Insurance platform. Transitioned from graduate training to production development, contributing to a large-scale microservice architecture alongside 10 concurrent development teams.",
+    "highlights": [
+      "Delivered production features using C#, Angular, and SQL for a major US insurance partner",
+      "Contributed across backend, frontend, and database layers during 2-week sprint cycles",
+      "Participated in structured code review process and maintained unit tests for reliability",
+      "Adapted quickly to changing requirements and priorities in a dynamic multi-team environment",
+      "Used Git and Azure DevOps for version control, work item tracking, and CI/CD pipelines",
+      "Communicated effectively across developers, testers, product owners, and external teams"
+    ]
+  }
+]

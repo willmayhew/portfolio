@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserStatsService } from '../../services/user-stats.service';
+import { UserStatsService } from '../../services/user-stats/user-stats.service';
 
 @Component({
     selector: 'app-user-stats',
@@ -14,6 +14,5 @@ export class UserStatsComponent implements OnInit {
   constructor(private userStatsService: UserStatsService) {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 }

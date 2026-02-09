@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "html_url": "https://github.com/willmayhew/cyber-security-escape-room",
+    "name": "Cyber Security Educational Game",
+    "description": "An interactive escape room game developed with C# and Unity to create an engaging educational tool. Designed and implemented custom game mechanics for cyber security learning scenarios with play-testing to evaluate educational effectiveness.",
+    "language": "C#, Unity",
+    "topics": ["game-development", "unity", "csharp", "educational"]
+  },
+  {
+    "id": 2,
+    "html_url": "https://github.com/willmayhew/fake-tweet-classification",
+    "name": "Fake Tweet Classification Project",
+    "description": "A machine learning project for classifying fake tweets using Python, Scikit-learn, and NLTK. Performed comprehensive data analysis and preprocessing of tweets, implemented Random Forest and Support Vector Machine models achieving F1 scores of 0.91 and 0.83 respectively.",
+    "language": "Python, Scikit-learn, NLTK",
+    "topics": ["machine-learning", "python", "nlp", "data-science"]
+  },
+  {
+    "id": 3,
+    "html_url": "https://github.com/willmayhew/ad-auction-dashboard",
+    "name": "Ad Auction Dashboard Group Project",
+    "description": "A marketing campaign evaluation tool developed in Java and JavaFX as part of a Software Engineering Group Project. Responsible for SQL query development and optimization, GUI development using JavaFX, and comprehensive JUnit testing. Built with Maven for dependency management.",
+    "language": "Java, JavaFX, Maven, SQL",
+    "topics": ["java", "javafx", "sql", "software-engineering", "maven"]
+  }
+]

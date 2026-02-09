@@ -1,0 +1,42 @@
+[
+  {
+    "id": "languages",
+    "title": "Languages",
+    "delay": 200,
+    "items": [
+      "C#",
+      "Java",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL"
+    ]
+  },
+  {
+    "id": "frameworks",
+    "title": "Frameworks & Tools",
+    "delay": 300,
+    "items": [
+      "Angular",
+      "React",
+      "JavaFX",
+      "Unity",
+      "Maven",
+      "Scikit-learn",
+      "NLTK"
+    ]
+  },
+  {
+    "id": "other-skills",
+    "title": "DevOps & Testing",
+    "delay": 400,
+    "items": [
+      "Git",
+      "Azure DevOps",
+      "Unit Testing (C#, JUnit)",
+      "Agile/Scrum",
+      "Machine Learning",
+      "Data Structures & Algorithms"
+    ]
+  }
+]
