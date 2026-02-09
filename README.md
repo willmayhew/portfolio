@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) ~~version 14.2.13~~ version 21.1.3
 
+This is a somewhat WIP portfolio website. It was made during my end of training/start of client work as a means to practice using Angular.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
