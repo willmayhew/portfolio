@@ -18,21 +18,7 @@
   }
 }
 
-/* 2. Deep overrides for period / icon if needed */
-:host ::ng-deep {
-  .period-container {
-    background: var(--primary-color) !important;
-    border-radius: 20px;
-  }
-
-  .center-icon-container {
-    background: transparent !important;
-  }
-
-  .icon {
-    background: var(--accent-color) !important;
-  }
-}
+/* 2. Deep overrides removed - use encapsulation: ViewEncapsulation.None if needed */
 
 /* 3. Event-card flex + breakpoints */
 .event-card {
