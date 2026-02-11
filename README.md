@@ -1,8 +1,20 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) ~~version 14.2.13~~ version 21.1.3
+**Live site:**  
+https://portfolio-willmayhews-projects.vercel.app
 
-This is a somewhat WIP portfolio website. It was made during my end of training/start of client work as a means to practice using Angular.
+This is my personal portfolio website, built with **Angular** to showcase my projects, skills, and experience as a software developer.
+
+The project was originally started during the transition from training into client work and has since evolved into an ongoing space to experiment with Angular features, UI patterns, and deployment workflows.
+
+## Tech Stack
+
+- **Frontend:** Angular (v21.1.3)
+- **Language:** TypeScript
+- **Styling:** CSS / Angular component styles
+- **Tooling:** Angular CLI
+- **Hosting:** Vercel
+- **CI/CD:** GitHub → Vercel automatic deployments
 
 ## Development server
 
